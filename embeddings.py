@@ -27,8 +27,8 @@ llm = HuggingFaceLLM(
     generate_kwargs={"temperature": 0.1,"top_p":0.0, "do_sample": True},
     system_prompt=system_prompt,
     query_wrapper_prompt=query_wrapper_prompt,
-    tokenizer_name="tiiuae/falcon-7b",
-    model_name="tiiuae/falcon-7b",
+    tokenizer_name="mistralai/Mixtral-8x7B-Instruct-v0.1",
+    model_name="mistralai/Mixtral-8x7B-Instruct-v0.1",
     device_map="auto",
     # uncomment this if using CUDA to reduce memory usage
     model_kwargs={"torch_dtype": torch.float16 , "load_in_8bit":True}
